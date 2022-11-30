@@ -9,9 +9,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
+import jakarta.ws.rs.core.HttpHeaders;
 
 import static org.junit.Assert.*;
 

@@ -2,7 +2,7 @@ package com.amazonaws.serverless.proxy.internal.servlet;
 
 import org.junit.Test;
 
-import javax.servlet.*;
+import jakarta.servlet.*;
 
 import java.io.IOException;
 import java.util.Enumeration;

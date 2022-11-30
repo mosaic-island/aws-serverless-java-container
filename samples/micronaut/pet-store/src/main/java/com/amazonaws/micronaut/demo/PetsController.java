@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.security.Principal;
 import java.util.Optional;
 import java.util.UUID;

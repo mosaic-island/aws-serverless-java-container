@@ -30,9 +30,9 @@ import org.apache.commons.io.input.NullInputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.ws.rs.core.MediaType;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.ws.rs.core.MediaType;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -514,9 +514,11 @@ public abstract class AwsHttpServletRequest implements HttpServletRequest {
 
     @SuppressFBWarnings({"FILE_UPLOAD_FILENAME", "WEAK_FILENAMEUTILS"})
     protected Map<String, Part> getMultipartFormParametersMap() {
+/*
         if (multipartFormParameters != null) {
             return multipartFormParameters;
         }
+
         if (!ServletFileUpload.isMultipartContent(this)) { // isMultipartContent also checks the content type
             multipartFormParameters = new HashMap<>();
             return multipartFormParameters;
@@ -547,6 +549,8 @@ public abstract class AwsHttpServletRequest implements HttpServletRequest {
         }
         Timer.stop("SERVLET_REQUEST_GET_MULTIPART_PARAMS");
         return multipartFormParameters;
+*/
+        throw new UnsupportedOperationException("AwsHttpServletRequest.getMultipartFormParametersMap()");
     }
 
     protected String[] getQueryParamValues(MultiValuedTreeMap<String, String> qs, String key, boolean isCaseSensitive) {

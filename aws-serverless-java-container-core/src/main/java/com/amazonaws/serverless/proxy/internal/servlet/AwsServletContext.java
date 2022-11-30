@@ -17,13 +17,12 @@ import com.amazonaws.serverless.proxy.internal.LambdaContainerHandler;
 import com.amazonaws.serverless.proxy.internal.SecurityUtils;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import jakarta.servlet.*;
+import jakarta.servlet.descriptor.JspConfigDescriptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.activation.MimetypesFileTypeMap;
-import javax.servlet.*;
-import javax.servlet.descriptor.JspConfigDescriptor;
-
+import jakarta.activation.MimetypesFileTypeMap;
 import java.io.File;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -345,13 +344,18 @@ public class AwsServletContext
         }
     }
 
+    @Override
+    public ServletRegistration.Dynamic addJspFile(String s, String s1) {
+        throw new UnsupportedOperationException("AwsServletContext.addJspFile("+s+", "+s1+")");
+    }
+
 
     @Override
     public <T extends Servlet> T createServlet(Class<T> aClass) throws ServletException {
         /*log("Called createServlet: " + aClass.getName());
         log("Implemented frameworks are responsible for creating servlets");*/
         // TODO: This method introspects the given clazz for the following annotations: ServletSecurity, MultipartConfig,
-        //  javax.annotation.security.RunAs, and javax.annotation.security.DeclareRoles. In addition, this method supports
+        //  jakarta.annotation.security.RunAs, and jakarta.annotation.security.DeclareRoles. In addition, this method supports
         //  resource injection if the given clazz represents a Managed Bean. See the Java EE platform and JSR 299 specifications
         //  for additional details about Managed Beans and resource injection.
         try {
@@ -534,5 +538,35 @@ public class AwsServletContext
     @Override
     public String getVirtualServerName() {
         return null;
+    }
+
+    @Override
+    public int getSessionTimeout() {
+        throw new UnsupportedOperationException("AwsServletContext.getSessionTimeout()");
+    }
+
+    @Override
+    public void setSessionTimeout(int i) {
+        throw new UnsupportedOperationException("AwsServletContext.setSessionTimeout("+i+")");
+    }
+
+    @Override
+    public String getRequestCharacterEncoding() {
+        throw new UnsupportedOperationException("AwsServletContext.getRequestCharacterEncoding()");
+    }
+
+    @Override
+    public void setRequestCharacterEncoding(String s) {
+        throw new UnsupportedOperationException("AwsServletContext.setRequestCharacterEncoding("+s+")");
+    }
+
+    @Override
+    public String getResponseCharacterEncoding() {
+        throw new UnsupportedOperationException("AwsServletContext.getResponseCharacterEncoding()");
+    }
+
+    @Override
+    public void setResponseCharacterEncoding(String s) {
+        throw new UnsupportedOperationException("AwsServletContext.setResponseCharacterEncoding("+s+")");
     }
 }

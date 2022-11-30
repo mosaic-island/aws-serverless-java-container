@@ -7,7 +7,7 @@ import com.amazonaws.services.lambda.runtime.Context;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.ws.rs.core.SecurityContext;
+import jakarta.ws.rs.core.SecurityContext;
 
 import java.lang.reflect.Method;
 

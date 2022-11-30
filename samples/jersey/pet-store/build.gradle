@@ -20,7 +20,7 @@ dependencies {
   }
 
   implementation("org.glassfish.jersey.inject:jersey-hk2:2.37") {
-    exclude group: 'javax.inject', module: "javax.inject"
+    exclude group: 'jakarta.inject', module: "jakarta.inject"
   }
 }
 

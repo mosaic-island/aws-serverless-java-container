@@ -35,9 +35,9 @@ import org.springframework.core.env.StandardEnvironment;
 import org.springframework.web.context.ConfigurableWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import javax.servlet.Servlet;
-import javax.servlet.ServletRegistration;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletRegistration;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.concurrent.CountDownLatch;
 
 /**

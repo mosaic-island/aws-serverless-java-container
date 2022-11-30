@@ -9,9 +9,9 @@ import com.amazonaws.serverless.proxy.internal.testutils.AwsProxyRequestBuilder;
 import com.amazonaws.services.lambda.runtime.Context;
 import org.junit.Test;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.core.HttpHeaders;
-import javax.ws.rs.core.SecurityContext;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.SecurityContext;
 import java.lang.reflect.Method;
 
 import static org.junit.Assert.*;

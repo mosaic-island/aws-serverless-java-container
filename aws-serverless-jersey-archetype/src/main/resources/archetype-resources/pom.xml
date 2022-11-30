@@ -55,11 +55,11 @@
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
             <version>\${jersey.version}</version>
-            <!-- excluding redundant javax.inject dependency -->
+            <!-- excluding redundant jakarta.inject dependency -->
             <exclusions>
                 <exclusion>
-                    <groupId>javax.inject</groupId>
-                    <artifactId>javax.inject</artifactId>
+                    <groupId>jakarta.inject</groupId>
+                    <artifactId>jakarta.inject</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>

@@ -5,7 +5,7 @@ import com.amazonaws.serverless.proxy.internal.servlet.AwsProxyHttpServletReques
 import com.amazonaws.services.lambda.runtime.Context;
 import org.junit.Test;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import java.nio.ByteBuffer;
 

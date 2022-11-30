@@ -59,9 +59,9 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+        <!-- https://mvnrepository.com/artifact/jakarta.activation/activation -->
         <dependency>
-            <groupId>javax.activation</groupId>
+            <groupId>jakarta.activation</groupId>
             <artifactId>activation</artifactId>
             <version>1.1.1</version>
             <scope>test</scope>
@@ -76,15 +76,15 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
             <version>3.0.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
+            <artifactId>jakarta.el</artifactId>
             <version>3.0.0</version>
             <scope>test</scope>
         </dependency>

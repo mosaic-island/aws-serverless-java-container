@@ -19,9 +19,9 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
@@ -103,11 +103,11 @@ public class AwsProxyRequestDispatcher implements RequestDispatcher {
         }
         servletRequest.setAttribute(DISPATCHER_TYPE_ATTRIBUTE, DispatcherType.INCLUDE);
         if (!isNamedDispatcher) {
-            servletRequest.setAttribute("javax.servlet.include.request_uri", ((HttpServletRequest)servletRequest).getRequestURI());
-            servletRequest.setAttribute("javax.servlet.include.context_path", ((HttpServletRequest) servletRequest).getContextPath());
-            servletRequest.setAttribute("javax.servlet.include.servlet_path", ((HttpServletRequest) servletRequest).getServletPath());
-            servletRequest.setAttribute("javax.servlet.include.path_info", ((HttpServletRequest) servletRequest).getPathInfo());
-            servletRequest.setAttribute("javax.servlet.include.query_string",
+            servletRequest.setAttribute("jakarta.servlet.include.request_uri", ((HttpServletRequest)servletRequest).getRequestURI());
+            servletRequest.setAttribute("jakarta.servlet.include.context_path", ((HttpServletRequest) servletRequest).getContextPath());
+            servletRequest.setAttribute("jakarta.servlet.include.servlet_path", ((HttpServletRequest) servletRequest).getServletPath());
+            servletRequest.setAttribute("jakarta.servlet.include.path_info", ((HttpServletRequest) servletRequest).getPathInfo());
+            servletRequest.setAttribute("jakarta.servlet.include.query_string",
                     SecurityUtils.encode(SecurityUtils.crlf(((HttpServletRequest) servletRequest).getQueryString())));
             setRequestPath(servletRequest, dispatchTo);
         }

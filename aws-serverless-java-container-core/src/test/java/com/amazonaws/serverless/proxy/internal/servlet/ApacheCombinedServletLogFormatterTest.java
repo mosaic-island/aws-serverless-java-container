@@ -7,8 +7,8 @@ import com.amazonaws.serverless.proxy.model.AwsProxyRequestContext;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.time.Clock;
 import java.time.Instant;

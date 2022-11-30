@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import spark.Spark;
 
-import javax.servlet.http.Cookie;
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.servlet.http.Cookie;
+import jakarta.ws.rs.core.HttpHeaders;
 
 import java.util.Arrays;
 import java.util.Collection;

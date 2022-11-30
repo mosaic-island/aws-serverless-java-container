@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import spark.Spark;
 
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
