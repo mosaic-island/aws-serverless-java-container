@@ -1,4 +1,14 @@
 # Serverless Java container [![Build Status](https://github.com/awslabs/aws-serverless-java-container/workflows/Continuous%20Integration/badge.svg)](https://github.com/awslabs/aws-serverless-java-container/actions) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.amazonaws.serverless/aws-serverless-java-container/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.amazonaws.serverless/aws-serverless-java-container) [![Help](http://img.shields.io/badge/help-gitter-E91E63.svg?style=flat-square)](https://gitter.im/awslabs/aws-serverless-java-container)
+
+--- 
+# ATTENTION 
+
+__This is a temporary fork of (https://github.com/awslabs/aws-serverless-java-container) as we needed Spring Boot 3 support. It's a quick and dirty hack of the aws-serverless-java-container-springboot2 module. That module was copied and renamed aws-serverless-java-container-springboot3. Changes were made to support the `javax` to `jakarta` namespace change. Some methods have not been implemented and some disabled, but this appears to be sufficient for our current use case. We will adopt the official Spring Boot 3 version of this library as and when it becomes available.__
+
+GitHub Actions are configured for this forked repo. Rather than triggering on pushes, it triggers on release creation from within GitHub. At this point, the build runs and publishes the resultant artefact to GitHub Packages. The maven repository is available here (https://maven.pkg.github.com/mosaic-island/aws-serverless-java-container), but requires authentication, so is not publicly accessible.
+
+---
+
 The `aws-serverless-java-container` makes it easy to run Java applications written with frameworks such as [Spring](https://spring.io/), [Spring Boot](https://projects.spring.io/spring-boot/), [Apache Struts](http://struts.apache.org/), [Jersey](https://jersey.java.net/), or [Spark](http://sparkjava.com/) in [AWS Lambda](https://aws.amazon.com/lambda/).
 
 Serverless Java Container natively supports API Gateway's proxy integration models for requests and responses, you can create and inject custom models for methods that use custom mappings.
