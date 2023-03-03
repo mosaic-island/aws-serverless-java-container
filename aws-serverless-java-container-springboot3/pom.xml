@@ -15,9 +15,9 @@
     <version>1.10-SNAPSHOT</version>
 
     <properties>
-        <spring.version>6.0.2</spring.version>
-        <springboot.version>3.0.0</springboot.version>
-        <springsecurity.version>6.0.0</springsecurity.version>
+        <spring.version>6.0.5</spring.version>
+        <springboot.version>3.0.3</springboot.version>
+        <springsecurity.version>6.0.2</springsecurity.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
