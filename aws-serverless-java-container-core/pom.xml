@@ -6,13 +6,13 @@
     <name>AWS Serverless Java container support - Core</name>
     <description>Allows Java applications written for a servlet container to run in AWS Lambda</description>
     <url>https://aws.amazon.com/lambda</url>
-    <version>1.10-SNAPSHOT</version>
+    <version>1.11-SNAPSHOT</version>
 
     <parent>
         <groupId>com.amazonaws.serverless</groupId>
         <artifactId>aws-serverless-java-container</artifactId>
         <version>1.10-SNAPSHOT</version>
-        <relativePath>..</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <properties>
@@ -67,7 +67,7 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.4</version>
+            <version>1.5</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
