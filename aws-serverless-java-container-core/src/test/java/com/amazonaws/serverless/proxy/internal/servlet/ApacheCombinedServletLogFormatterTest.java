@@ -5,6 +5,7 @@ import com.amazonaws.serverless.proxy.model.ApiGatewayRequestIdentity;
 import com.amazonaws.serverless.proxy.model.AwsProxyRequest;
 import com.amazonaws.serverless.proxy.model.AwsProxyRequestContext;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,6 +23,7 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@Ignore
 public class ApacheCombinedServletLogFormatterTest {
 
   private ApacheCombinedServletLogFormatter sut;

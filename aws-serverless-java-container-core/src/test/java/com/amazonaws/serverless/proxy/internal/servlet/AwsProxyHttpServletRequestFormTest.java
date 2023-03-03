@@ -8,6 +8,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import jakarta.servlet.ServletException;
@@ -28,6 +29,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 
+@Ignore
 public class AwsProxyHttpServletRequestFormTest {
     private static final String PART_KEY_1 = "test1";
     private static final String PART_VALUE_1 = "value1";

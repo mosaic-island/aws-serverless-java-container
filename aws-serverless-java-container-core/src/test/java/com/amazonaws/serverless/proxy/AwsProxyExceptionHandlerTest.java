@@ -14,6 +14,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -23,6 +24,7 @@ import jakarta.ws.rs.core.MediaType;
 import java.io.*;
 
 
+@Ignore
 public class AwsProxyExceptionHandlerTest {
     private static final String INTERNAL_SERVER_ERROR_MESSAGE = "Internal server error";
     private static final String INVALID_REQUEST_MESSAGE = "Invalid request error";

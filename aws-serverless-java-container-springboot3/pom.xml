@@ -37,6 +37,9 @@
             <version>${spring.version}</version>
             <optional>true</optional>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-api -->
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>

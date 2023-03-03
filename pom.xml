@@ -57,6 +57,17 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>aws-serverless-java-container</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/mosaic-island/aws-serverless-java-container</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <distributionManagement>
@@ -77,7 +88,7 @@
 
     <properties>
         <jacoco.minCoverage>0.7</jacoco.minCoverage>
-        <dependencyCheck.version>7.3.0</dependencyCheck.version>
+        <dependencyCheck.version>8.1.2</dependencyCheck.version>
         <jackson.version>2.14.2</jackson.version>
         <slf4j.version>2.0.5</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
