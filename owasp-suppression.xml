@@ -32,4 +32,9 @@
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring.*$</packageUrl>
         <cve>CVE-2016-1000027</cve>
     </suppress>
+    <suppress>
+        <packageUrl regex="true">^pkg:maven/com\.fasterxml\.jackson\.core/jackson-core.*$</packageUrl>
+        <notes>Jackson Core 2.14.2 is the latest, so have to ignore this vulnerability for the moment</notes>
+        <cve>CVE-2022-45688(7.5)</cve>
+    </suppress>
 </suppressions>
